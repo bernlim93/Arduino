@@ -1,0 +1,124 @@
+#define A 2
+#define B 3
+#define C 4
+#define D 5
+#define E 6
+#define f 7
+#define G 8
+void clr()
+{
+//Clears the LED
+digitalWrite(A, HIGH);
+digitalWrite(B, HIGH);
+digitalWrite(C, HIGH);
+digitalWrite(D, HIGH);
+digitalWrite(E, HIGH);
+digitalWrite(f, HIGH);
+digitalWrite(G, HIGH);
+}
+void aa()
+{
+digitalWrite(A, HIGH);
+digitalWrite(B, LOW);
+digitalWrite(C, LOW);
+digitalWrite(D, LOW);
+digitalWrite(E, LOW);
+digitalWrite(f, LOW);
+digitalWrite(G, LOW);
+}
+void bb()
+{
+digitalWrite(A, LOW);
+digitalWrite(B, HIGH);
+digitalWrite(C, LOW);
+digitalWrite(D, LOW);
+digitalWrite(E, LOW);
+digitalWrite(f, LOW);
+digitalWrite(G, LOW);
+}
+void cc()
+{
+digitalWrite(A, LOW);
+digitalWrite(B, LOW);
+digitalWrite(C, HIGH);
+digitalWrite(D, LOW);
+digitalWrite(E, LOW);
+digitalWrite(f, LOW);
+digitalWrite(G, LOW);
+}
+void dd()
+{
+digitalWrite(A, LOW);
+digitalWrite(B, LOW);
+digitalWrite(C, LOW);
+digitalWrite(D, HIGH);
+digitalWrite(E, LOW);
+digitalWrite(f, LOW);
+digitalWrite(G, LOW);
+}
+void ee()
+{
+digitalWrite(A, LOW);
+digitalWrite(B, LOW);
+digitalWrite(C, LOW);
+digitalWrite(D, LOW);
+digitalWrite(E, HIGH);
+digitalWrite(f, LOW);
+digitalWrite(G, LOW);
+}
+void ff()
+{
+digitalWrite(A, LOW);
+digitalWrite(B, LOW);
+digitalWrite(C, LOW);
+digitalWrite(D, LOW);
+digitalWrite(E, LOW);
+digitalWrite(f, HIGH);
+digitalWrite(G, LOW);
+}
+void gg()
+{
+digitalWrite(A, LOW);
+digitalWrite(B, LOW);
+digitalWrite(C, LOW);
+digitalWrite(D, LOW);
+digitalWrite(E, LOW);
+digitalWrite(f, LOW);
+digitalWrite(G, HIGH);
+}
+
+void LoopDisplay()
+{
+//Loop through all Chars and Numbers
+aa();
+delay(1000);
+bb();
+delay(500);
+cc();
+delay(500);
+dd();
+delay(500);
+ee();
+delay(500);
+ff();
+delay(500);
+gg();
+delay(500);
+}
+void setup()
+{
+//Setup our pins
+pinMode(A, OUTPUT);
+pinMode(B, OUTPUT);
+pinMode(C, OUTPUT);
+pinMode(D, OUTPUT);
+pinMode(E, OUTPUT);
+pinMode(f, OUTPUT);
+pinMode(G, OUTPUT);
+Serial.begin(9600); //Begin serial communcation
+}
+void loop()
+{
+Serial.println("Starting\n");
+LoopDisplay();
+}
