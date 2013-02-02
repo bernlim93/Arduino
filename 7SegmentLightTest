@@ -1,3 +1,7 @@
+//7 Segment Display: Individual light test
+//Bernard (bernlim93) all rights reserved
+//www.bernlim.com
+
 #define A 2
 #define B 3
 #define C 4
